@@ -1,19 +1,34 @@
 const timelineData = [
     {
-      header: "Fall 2025",
-      body: "Launch Strategy 1: Campus Connect. Begin academic alliances, pop-up events, and the Halloween competition. Implement Strategy 2: UGC Amplification, social ads, and email campaigns."
+      header: "August - December 2025: Fall Semester",
+      body: `Launch Strategy 1: Campus Connect.
+      - August: Initiate university outreach and faculty partnerships. Launch stipends and editable templates.
+      - September: Start the nationwide pop-up bus events, including vision board stations and branded merchandise distribution.
+      - October: Launch Halloween-themed design competition. Promote using digital and campus channels.
+      - November: Amplify UGC from pop-up events on social media using branded hashtags like #AdobeExpressVisionBoard.`
     },
     {
-      header: "Spring 2026",
-      body: "Continue Strategy 1 with expanded partnerships and pop-up events. Launch a Spring competition. Maintain Strategy 2 with fresh UGC, expanded ads, and professional tips in email marketing."
+      header: "January - May 2026: Spring Semester",
+      body: `Continue Strategy 1 and maintain Strategy 2.
+      - January: Resume pop-up bus events on new campuses. Collect additional UGC and promote Adobe Express through campus ambassadors.
+      - February: Expand academic partnerships and onboard new universities for Adobe Express curriculum integration.
+      - March: Launch Spring-themed design competition and promote through Instagram, TikTok, and email campaigns.
+      - April: Share UGC and testimonials from Spring pop-up events. Use digital ads to target non-participating universities.`
     },
     {
-      header: "Summer 2026",
-      body: "Launch Strategy 3: Pathway to Success. Begin YouTube ads, influencer collaborations, and the Professional Certification program."
+      header: "June - August 2026: Summer Focus",
+      body: `Begin Strategy 3: Pathway to Success.
+      - June: Launch YouTube Video Impact Ads showcasing Adobe Express tutorials and testimonials. 
+      - July: Initiate influencer partnerships with nano- and micro-influencers to highlight Adobe Express's features for internships and creative projects.
+      - August: Launch the Professional Certification program, focusing on LinkedIn visibility for certified students.`
     },
     {
-      header: "Fall 2026",
-      body: "Expand Strategy 3 with influencer partnerships and certification promotions. Continue YouTube ads targeting new students."
+      header: "September - December 2026: Fall Semester Year 2",
+      body: `Expand Strategy 3 initiatives.
+      - September: Continue YouTube ads and influencer partnerships. Target new students entering college.
+      - October: Promote Professional Certification program through campus events and online campaigns.
+      - November: Use testimonials from certified students to create a year-end social media push.
+      - December: Wrap up Year 2 with performance reviews and optimization for future campaigns.`
     }
   ];
   
@@ -36,4 +51,5 @@ const timelineData = [
   
     timeline.appendChild(timelineItem);
   });
+  
   
