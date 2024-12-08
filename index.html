@@ -3,31 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adobe Express Marketing Plan Timeline</title>
+  <title>Adobe Express Implementation Timeline</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
       background-color: #f9f9fc;
+      margin: 20px;
     }
     .timeline {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
+      position: relative;
+      margin: 20px auto;
+      padding: 40px 0;
+      width: 80%;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #6a0dad;
+      z-index: 1;
     }
     .timeline-item {
+      position: relative;
+      margin: 20px 0;
+      width: 45%;
+      padding: 15px 20px;
+      background-color: #ede4f7;
       border: 2px solid #6a0dad;
       border-radius: 8px;
-      background-color: #ede4f7;
-      padding: 15px;
-      margin: 15px;
-      width: 80%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .timeline-item.left {
+      left: 0;
+    }
+    .timeline-item.right {
+      left: 50%;
+      transform: translateX(50%);
+    }
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      z-index: 1;
+    }
+    .timeline-item.left::after {
+      right: -16px;
+      border-width: 8px 0 8px 16px;
+      border-color: transparent transparent transparent #6a0dad;
+    }
+    .timeline-item.right::after {
+      left: -16px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #6a0dad transparent transparent;
     }
     .timeline-header {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       color: #6a0dad;
     }
     .timeline-body {
@@ -35,11 +72,16 @@
       font-size: 16px;
       color: #333;
     }
+    .timeline-body b {
+      color: #6a0dad;
+    }
   </style>
 </head>
 <body>
+  <h1 style="text-align: center; color: #6a0dad;">Adobe Express Implementation Timeline</h1>
   <div class="timeline" id="timeline"></div>
   <script src="ical.js"></script>
 </body>
 </html>
+
 
